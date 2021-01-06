@@ -2,7 +2,6 @@ import Editor from "./Editor";
 import Previewer from "./Previewer";
 import $ from 'jquery';
 import {useState, useEffect} from 'react';
-import marked from 'marked';
 
 
 /*-----------------REACT PART-----------------*/

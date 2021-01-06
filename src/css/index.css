@@ -1,0 +1,106 @@
+body {
+  background-color: #181a1b;
+  color: white;
+}
+
+#app-container {
+  height: 90vh;
+  width: 90vw;
+  margin: auto;
+}
+#app-container > div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.base-container {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-column-gap: 1.5em;
+}
+
+.ep-containers {
+  border: 1px solid white;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 7% 93%;
+}
+.ep-containers > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ep-containers > div:first-child > h2 {
+  font-family: "Turret Road", cursive;
+  font-size: 1.3em;
+  margin-left: 0.5em;
+}
+
+.up-container {
+  grid-column: 1/3;
+  height: 100%;
+}
+
+.down-container {
+  grid-area: down;
+}
+
+i {
+  margin: 0.5em;
+}
+
+i:hover {
+  color: #696970;
+  cursor: pointer;
+}
+
+#editor, #preview {
+  background-color: #2a2a2e;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0.5em;
+  overflow: auto;
+  resize: none;
+}
+
+#preview {
+  border-top: 1px solid white;
+}
+
+code, pre {
+  background-color: #696970;
+}
+
+pre {
+  padding: 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, tr, td {
+  border: 1px solid white;
+}
+
+a {
+  color: yellow;
+}
+
+@media (max-height: 600px) {
+  .ep-containers > h2 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 1000px) {
+  #app-container > div {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 100%);
+    grid-row-gap: 1.5em;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
